@@ -47,7 +47,7 @@ public class Extra12 {
                     
                     //luego se imprime por pantalla
                     
-                    System.out.println(ci+cj+ck);
+                    System.out.println(ci+"-"+cj+"-"+ck);
                 }
             }
             System.out.println("");
