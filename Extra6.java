@@ -9,7 +9,7 @@ public class Extra6 {
     public static void main(String[]args){
         Scanner leer=new Scanner(System.in);
         
-        float acumulador=0,j=0,acumuladorGral=0,estatura;
+        float acumulador=0,j=0,acumuladorGral=0,estatura,prompetisos,promdemas;
         int n;
         System.out.print("Ingrese la cantidad de personas: ");
         n=leer.nextInt();
@@ -25,7 +25,12 @@ public class Extra6 {
                        
         }
         
+        prompetisos=Math.round(acumulador*100.0f)/100.0f;
+        promdemas=Math.round(acumuladorGral*100.0f)/100.0f;
+        
         System.out.println("El Promedio de los petisos es de: "+(acumulador/j)+" metros");
+        System.out.println("El Promedio de los petisos es de: "+prompetisos+" metros");
         System.out.println("El Promedio de los demas es de: "+(acumuladorGral/n)+" metros");
+        System.out.println("El Promedio de los demas es de: "+promdemas+" metros");
     }
 }

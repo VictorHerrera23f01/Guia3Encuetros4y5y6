@@ -28,10 +28,10 @@ public class Extra5 {
         
         switch (tipoSocio) {
             case "a":
-                System.out.println("Ud. debe pagar: " + (costo / 2));
+                System.out.println("Ud. debe pagar: " + (costo * 0.5));
                 break;
             case "b":
-                System.out.println("Ud. debe pagar: " + (costo * 35 / 100));
+                System.out.println("Ud. debe pagar: " + (costo * 0.65));
                 break;
             case "c":
                 System.out.println("Ud. debe pagar: " + costo);
