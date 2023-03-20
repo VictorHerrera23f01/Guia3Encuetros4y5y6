@@ -21,16 +21,18 @@ public class Extra9 {
     public static void main(String[]args){
         Scanner leer=new Scanner(System.in);
         
-        int dividendo,divisor,resto=0,cociente=0;
+        int dividendo,divisor,resto=0,cociente=0,aux=0;
         System.out.print("Ingrese un numero: ");
         dividendo=leer.nextInt();
         System.out.print("Ingrese un divisor: ");
         divisor=leer.nextInt();
         
         while(dividendo>divisor){
+            aux=dividendo;
             resto=dividendo-divisor;
             dividendo=resto;
             cociente++;
+            System.out.println(aux+"-"+divisor+" : "+resto);
         }
         
         System.out.println("\nEl residuo es de: "+resto);
